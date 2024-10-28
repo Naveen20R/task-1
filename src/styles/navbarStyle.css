@@ -1,0 +1,248 @@
+.navbar {
+    z-index: 100;
+    /* border: 2px solid red; */
+}
+
+.navbar-nav {
+    /* border: 2px solid red; */
+    height: 80px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 2em;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.nav-link {
+    font-weight: 600 !important;
+    letter-spacing: .2px !important;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.637) !important;
+}
+
+.solution {
+    position: relative;
+}
+
+
+.solutiondrops {
+    position: fixed;
+    /* Changes the dropdown to be fixed relative to the viewport */
+    top: 0px;
+    /* Adjust based on the navbar height */
+    left: 0;
+    /* Adjust this value to align with "Solutions" */
+    background-color: #F6F9FB;
+    min-width: 500px;
+    z-index: 150;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drop-card-1 {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.dropTitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.drop-links {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-links:hover .drop-icon {
+    color: black;
+}
+
+.drop-icon {
+    color: #88add2;
+}
+
+.dropdown-menu {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.up-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #F6F9FB;
+    margin-left: 20px;
+    margin-top: -12px;
+    position: absolute;
+    /* border: 1px solid red; */
+    top: 0px;
+    left: 20px;
+}
+
+.right-arrow-icon-full {
+    display: none;
+}
+
+
+.right-arrow span:nth-child(1) {
+    width: auto !important;
+}
+
+.right-arrow .second-span {
+    display: inline-block;
+    min-width: 20px !important;
+    height: auto;
+}
+
+.right-arrow:hover .right-arrow-icon {
+    transform: translateX(10%);
+    display: none;
+}
+
+.right-arrow:hover .right-arrow-icon-full {
+    display: inline;
+}
+
+.nav-btn {
+    border-radius: 30px;
+    background-color: white !important;
+    color: rgb(54, 144, 201) !important;
+}
+
+.nav-btn span:nth-child(2) {
+    display: inline-block;
+    min-width: 20px !important;
+    height: auto;
+}
+
+.nav-btn:hover{
+    color:rgb(54, 144, 201) !important;
+    background-color:#F6F9FB !important;
+}
+
+.nav-btn:hover .right-arrow-icon{
+    transform: translateX(10%);
+    display: none;
+}
+.nav-btn:hover .right-arrow-icon-full{
+    display: inline;
+}
+
+
+.navbar-toggler{
+    border:none !important;
+    border-radius:30px !important;
+    background-color:rgba(255, 255, 255, 0.451) !important;
+    opacity:0.95;
+    /* width:30px; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+.bar-icon{
+    color:white !important;
+    font-size:15px;
+    border:none;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none !important;
+}
+
+
+.offcanvas-title{
+    color:#635bff;
+    font-weight:bolder;
+    letter-spacing:-1px;
+    font-size:22px;
+}
+
+#btn-close{
+    color:#3F4B66 !important;
+
+}
+
+.btn-close:focus{
+    box-shadow:none !important;
+}
+
+.side-nav-head-part{
+    padding:15px 35px !important;
+}
+.side-nav-head-part,.sub-nav ul li{
+    border-bottom:1px dashed #EEEEF2;
+}
+
+.sub-nav ul{
+    margin:0px;
+    padding:0px;
+}
+
+.sub-nav ul li{
+    padding:15px;
+}
+
+.sub-nav ul li h6{
+    color:#3F4B66;
+    font-size:18px;
+}
+
+.right-arrow{
+    color:#3F4B66;
+    font-size:25px;
+}
+
+#side-nav-close-icon{
+    color:#3F4B66 !important;
+    font-size: 25px;
+}
+
+
+
+@media(max-width:992px){
+    .main-nav{
+        display:none !important;
+    }
+    .sub-nav,.sub-nav-2{
+        display:inline-block;
+    }
+    .navbar-brand{
+        margin-top:10px;
+    }
+
+
+}
+
+@media(min-width:992px){
+    .main-nav{
+        display:inline-block !important;
+    }
+    .sub-nav ,.sub-nav-2{
+        display:none !important;
+    }
+
+    .side-nav-head-part{
+        border: none !important;
+    }
+    .navbar-brand{
+        margin-top:40px;
+    }
+}
